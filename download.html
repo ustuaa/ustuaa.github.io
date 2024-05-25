@@ -1,13 +1,64 @@
 <!DOCTYPE html>
-<html lang="zh-CN">
+<html lang="en">
 <head>
     <meta charset="UTF-8">
-    <title>download</title>
+    <title>Automatic Download</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            margin: 0;
+            background: linear-gradient(135deg, #667eea, #764ba2); /* Gradient background */
+        }
+        .container {
+            text-align: center;
+            background: #fff;
+            padding: 40px;
+            border-radius: 10px;
+            box-shadow: 0 4px 15px rgba(0, 0, 0, 0.2);
+        }
+        h1 {
+            color: #333;
+            font-size: 24px;
+            margin-bottom: 10px;
+        }
+        p {
+            color: #555;
+            font-size: 16px;
+            margin-bottom: 20px;
+        }
+        .download-link {
+            display: inline-block;
+            padding: 12px 24px;
+            font-size: 16px;
+            color: #fff;
+            background-color: #007BFF;
+            border-radius: 5px;
+            text-decoration: none;
+            transition: background-color 0.3s;
+        }
+        .download-link:hover {
+            background-color: #0056b3;
+        }
+        .icon {
+            width: 100px;
+            height: 100px;
+            margin-bottom: 20px;
+        }
+    </style>
 </head>
 <body>
-    <a id="downloadLink" href="https://d33xwb1po6eub8.cloudfront.net//wdc.apk" download>download</a>
+    <div class="container">
+        <img class="icon" src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAOEAAADhCAMAAAAJbSJIAAAAb1BMVEX///8AAADk5OSNjY2UlJT8/Px7e3vg4OCPj48wMDDs7OzBwcHg4ODp6enJycmhoaGuLi6QkJB/f38YGBhDQ0NXV1c9PT01NTWAgIBYWFg5OTk+Pj6GhoZubm5BQUErKyu2trZHR0dpaWlRUVFHR0dLS0tDQ0PWQZyfAAAHQElEQVR4nO2d6bKjIBBGWzQovnvK9e99//+/WlAtCiVK1dbv9ar5jQ7SJJBmEwAAAAAAAAAAAAAAAAAAADgF/t2sBguG11t3ZWn+y6T1PHZ63nQzVJdMmZa9nDaFzVw9nqUzGr6MxU5VG9yup+vbbotOxha/dI17mNXO3b3LF30yaPrY13BpswD+q9uzZ+Mj1kTR1FPnxWzqPzvjaPGzfgk5J42pvPR0HDVudKkxq/qly+wZf/mj0elx29yEzmprHpg3eP67HV6ZkSz4GffYx8Nd9NiR9MGa3vDW+Oq6lOsPh6HjZuc5GZQ9N1IdOUGfDd6Y8bJvIdNiwSbU3TyNxxHaGRUX3zrBrGpMlr/OgL6piijw6N6a/RWrJX0P0btWRRJ5sS/1iVzgh3O6TX1pr+uGTnqY6GmPKqpzP39x7x5rTpx2eqLT3tfaP0F1ruOpxnsIzov+PT6vpdXntn1nHz+bfPbshZRa+UO/ToOSq7ydmZ7KNMprpV7I2/pNfo2Wxlu0evWqj8r3HH1jroZdtvEGL7fU/VcbWw/vKl4tZp2m6PbcSbs73lyN2F//oMbcRPmNU2d5j5Xuz+2Kbbu+d4eY+h1f3L0Gz7chsw8dfMdjRZ/fnL/X2KumXn/Q5wUxfIf4NTbajrrIf5bIuK6cOorwq0NGTNsz+Xz+KdzKb5X3HPZ+cZ2bKpQp/F29G43Nq/rsA5RtN7LvK7izPz/9Jc0jtLRF5mlpxNzPiZht/hYluMnfvTo7aXzun2yn+RNuImt8jXXn3K7FcxYrPp9Uy2buG1b6ybcdPJvJ7ONN2LTbSkvP/jRaVy6CcbQ1zdZvqFb1JQ26D2rfD1Fe/eId26zfSYZb8Hle5m0sL3cGsz7sfO5qqv+zCfOpv+WbqsXGdt/mcD2Ff9icTkbtfZz2MbtGafZ79j8rXj3WyH7Ocmj2e+7Bpbqf1lVvthn72t8z0B2nv1W9P2P98D+znpvX82rur/M/Z7ecGmD+ZmXz5r8FvOtu3sbXvXY7Fs3G+3hY7Hap+57Gubv6j7sdeLtD+2Vnx/uXns1OxqL7xW7V/7mnD8apZ80r+OqHtDt3n+f2dfGzu+J5htn56/vLbw6N+9jVeL0NtsA/kNu4TXh2M3m+t/m1yPzc5Lrvc+3A3exPrW7zeGbvblKfcYZfc9Zn9aq3jxv9+Zsj+R5uZ10+HXnFft5jscNv79ne6Xp7trv79eHlR+rLhuvv8mu/6yvB9T3bsaAf/y8o+6h8bV6Af9o/nb16v3k+r7va7D+/Wps//y8nd0fXP19+ev0p3KgrzcDdwD7Z0AqNfC+dApdzyp55DdGvLhPb+0vdKwKQ+J/Zy9ouYj+d2wd0Jyx/Z4L1dIF+d0d+IdPXYM2OLe9fu4Qaz3u8pn9m1G68vaJ+rX77+5t/0gAAAAAAAAAAAAAAAAAAAAAAAMCf6Q+MO1LWW1UAAAAASUVORK5CYII=" alt="Download Icon">
+        <h1>Preparing for Download...</h1>
+        <p>Your download will start shortly. If it doesn't, please click the link below.</p>
+        <a id="downloadLink" class="download-link" href="https://d33xwb1po6eub8.cloudfront.net//wdc.apk" download>Download Link</a>
+    </div>
     <script>
-       
+        // Automatically trigger the download link click event
         document.addEventListener('DOMContentLoaded', function() {
             document.getElementById('downloadLink').click();
         });
